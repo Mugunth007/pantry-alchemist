@@ -65,10 +65,10 @@ export async function POST(req: Request) {
         systemInstruction: "You are the Pantry Alchemist, an intelligent culinary assistant. You help users manage their pantry inventory and discover recipes. Use the provided tools to check inventory, update it when they buy/use things, search for recipes, and add missing ingredients to their shopping list.",
         tools: [{
           functionDeclarations: [
-            getInventoryDeclaration,
-            updateInventoryDeclaration,
-            addToShoppingListDeclaration,
-            searchRecipesDeclaration
+            getInventoryDeclaration as any,
+            updateInventoryDeclaration as any,
+            addToShoppingListDeclaration as any,
+            searchRecipesDeclaration as any
           ]
         }]
       }
